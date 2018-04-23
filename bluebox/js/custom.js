@@ -9,5 +9,14 @@ $(document).ready(function() {
 		mobileFirst: true,
 		// cssEase: true,
 	});
+
+
+	new WOW().init();
+
+	$(".burger-nav").on("click", function(){
+		$(".container .menu .ul").toggleClass("open");
+	});
+
 });
+
 

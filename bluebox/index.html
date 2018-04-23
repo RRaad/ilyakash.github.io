@@ -13,10 +13,15 @@
 	<meta name="keywords" content="">
 	
 	<title>Bluebox | Home</title>
-	<!-- Favicon browser -->
-	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
-	<link rel="shortcut icon" type="image/favicon.ico" href="images/favicon.ico">
-	<link rel="icon" type="image/x-icon" href="images/favicon.ico">
+	<!-- Favicon -->
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="192x192" href="img/favicon/android-chrome-192x192.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+	<link rel="manifest" href="img/favicon/site.webmanifest">
+	<link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#ffffff">
 	
 	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -37,19 +42,22 @@
 					<h1 class="logo__h1">BLUEBOX</h1></a>		
 			</div>
 		
-			<div class="menu [ inline-block right ]">
-			
+			<nav class="menu [ inline-block right ]">
+
+				<a class="burger-nav"></a>
+			<div class="ul">
 				<a class="menu__link" href="#">About</a>
-				<a class="menu__link" href="#">Services</a>
-				<a class="menu__link" href="#">Works</a>
+				<a class="menu__link" href="#page-feature">Services</a>
+				<a class="menu__link" href="pages/portfolio.html">Works</a>
 				<a class="menu__link" href="#">Blog</a>
 				<a class="menu__link" href="pages/contact.html">Contact us</a>
 			
 				<form class="menu__search [ right ]">
 					<input class="menu__search__input" type="search" placeholder="Search" aria-label="Search">
 					<a class="menu__search__icon [ fa fa-search ]" aria-hidden="true" href="#"></a>
-				</form>	
+				</form>
 			</div>
+			</nav>
 	
 		</div>
 	</header>
@@ -80,7 +88,7 @@
 </div>
 
 
-<div class="page-feature">
+<div class="page-feature" id="page-feature">
 	<div class="container">
 
 		<section class="feature__item">
@@ -197,7 +205,7 @@
 
 <div class="page-clients">
 	<div class="container">
-		<h2 class="clients__h2 [ clients__h2_mg-left ]">Clients</h2>
+		<h2 class="clients__h2">Clients</h2>
 
 			<div class="clients-slider [ js-slider ]">
 				
@@ -214,14 +222,14 @@
 <footer class="page-footer">
 	<div class="container">
 		
-		<div class="menu-footer [ left ]">
+		<nav class="menu-footer [ left ]">
 			<a class="menu-footer__link" href="#">Home</a>
 			<a class="menu-footer__link" href="#">About</a>
 			<a class="menu-footer__link" href="#">Services</a>
 			<a class="menu-footer__link" href="#">Work</a>
 			<a class="menu-footer__link" href="#">Blog</a>
 			<a class="menu-footer__link" href="#">Contact us</a>	
-		</div>
+		</nav>
 
 		<div class="social-media [ right ]">
 			<a class="social-media__link" href="#"><img src="img/icons/facebook-icon.png" alt="facebook" height="36" width="36"></a>
@@ -244,9 +252,23 @@
 	<!-- Javascript & jQuery -->
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/slick.min.js"></script>
+    <script src="js/wow.min.js"></script>
     <script src="js/custom.js"></script>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
