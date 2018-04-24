@@ -11,10 +11,9 @@ $(document).ready(function() {
 	});
 
 
-	new WOW().init();
 
 	$(".burger-nav").on("click", function(){
-		$(".container .menu .ul").toggleClass("open");
+		$(".menu .ul").toggleClass("open");
 	});
 
 });
